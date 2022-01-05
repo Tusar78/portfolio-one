@@ -1,0 +1,126 @@
+/* Add google Font */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;500;600&display=swap');
+
+/* Reset Code */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    color: #101320;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.section {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+/* Layout */
+.layout {
+    max-width: 1024px;
+    display: flex;
+    width: calc(100% - 2rem);
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+/* Home section */
+.home-banner {
+    width: 100%;
+    background: url(../images/top-banner.png) no-repeat;
+}
+
+.home,
+.dream {
+    flex-direction: column;
+}
+
+.home__desc,
+.dream__desc {
+    order: 2;
+}
+
+.title {
+    font-family: 'Merriweather', serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: .5rem;
+}
+
+.home__title--orange {
+    color: #ffc41f;
+}
+
+.subtitle {
+    font-weight: 600;
+    font-size: 1.125rem;
+    margin: 1.5rem 0 .5rem;
+}
+
+.home__text,
+.dream__text {
+    line-height: 1.6;
+}
+
+.btn-link {
+    display: inline-block;
+    padding: .625rem 2rem;
+    border-radius: .2rem;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.btn-link--orange {
+    background-color: tomato;
+    background-image: linear-gradient(45deg, lightsalmon, tomato);
+    color: #fff;
+}
+
+.home__image,
+.dream__image {
+    order: 1;
+    margin-bottom: 1.2rem;
+}
+
+/* Dream Section */
+.dream-bg {
+    position: relative;
+}
+
+.dream-bg::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.2;
+    background: url(../images/dream-bg.png) no-repeat;
+    background-position: top 70% right;
+    background-size: 100px;
+    z-index: -1;
+}
+
+.dream__title--purple {
+    color: #6e44da;
+}
+
+.btn-link--purple {
+    background-color: #6e44da;
+    background-image: linear-gradient(45deg, #7e2cd7, #5369de);
+    color: #fff;
+}
