@@ -49,8 +49,7 @@ img {
     flex-direction: column;
 }
 
-.home__desc,
-.dream__desc {
+.home__desc {
     order: 2;
 }
 
@@ -82,6 +81,7 @@ img {
     border-radius: .2rem;
     font-weight: 600;
     margin-top: 1rem;
+    text-transform: uppercase;
 }
 
 .btn-link--orange {
@@ -92,8 +92,11 @@ img {
 
 .home__image,
 .dream__image {
-    order: 1;
     margin-bottom: 1.2rem;
+}
+
+.home__image {
+    order: 1;
 }
 
 /* Dream Section */
@@ -166,4 +169,72 @@ img {
 
 .footer p {
     text-align: center;
+}
+
+
+/* Media Queries */
+@media screen and (min-width: 768.98px) {
+    .section {
+        padding: 3rem 0 2.5rem;
+    }
+
+    .home,
+    .dream {
+        flex-direction: row;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .home__desc {
+        order: 1;
+        width: 55%;
+    }
+
+    .home__image {
+        order: 2;
+        width: 45%;
+    }
+
+    .home__image,
+    .dream__image {
+        margin-bottom: 0;
+    }
+
+    .title {
+        font-size: 3rem;
+    }
+
+    .subtitle {
+        font-size: 1.5rem;
+    }
+
+    .btn-link {
+        margin-top: 2rem;
+    }
+
+    .dream__desc {
+        width: 55%;
+    }
+
+    .dream__image {
+        width: 45%;
+        margin-right: 4rem;
+    }
+
+    .experience {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .experience__list {
+        flex-direction: row;
+    }
+
+    .experience__article {
+        padding: 2rem 1.5rem;
+    }
+
+    .experience__article:not(:last-child) {
+        margin-right: 4rem;
+    }
 }
