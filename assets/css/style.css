@@ -124,3 +124,46 @@ img {
     background-image: linear-gradient(45deg, #7e2cd7, #5369de);
     color: #fff;
 }
+
+/* Experience area */
+.experience,
+.experience__list {
+    flex-direction: column;
+}
+
+.experience__list {
+    margin: 0;
+    width: 100%;
+}
+
+.experience__article {
+    padding: 1rem;
+    margin: 1rem 0;
+    box-shadow: 0 4px 16px rgba(24, 23, 48, 0.15), 0 6px 22px rgba(24, 23, 48, 0.15);
+    border-left: 5px solid;
+    border-image: linear-gradient(180deg, lightsalmon, tomato);
+    border-image-slice: 1;
+}
+
+.experience__article>.subtitle {
+    margin: 1rem 0 .5rem;
+    color: tomato;
+}
+
+.experience__article:nth-child(2) {
+    border-image: linear-gradient(45deg, #7e2cd7, #5369de);
+    border-image-slice: 1;
+}
+
+.experience__article:nth-child(2)>.subtitle {
+    color: #7e2cd7;
+}
+
+/* Footer area */
+.footer {
+    padding: 1rem 0 .5rem;
+}
+
+.footer p {
+    text-align: center;
+}
